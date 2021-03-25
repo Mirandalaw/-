@@ -1,0 +1,46 @@
+프로그래머스 Level3. 네트워크
+
+#include <string>
+#include <vector>
+#include <queue>
+#define MAX 201
+using namespace std;
+int visited[MAX]={0};
+
+void bfs(int start,int n,vector<vector<int>>computers);
+int solution(int n, vector<vector<int>> computers) {
+    int answer = 1;
+    bfs(0,n,computers);
+    for(int col=0;col<n;++col)
+    {
+        if(visited[col]==0)
+        {
+            bfs(col,n,computers);
+            answer++;
+        }
+    }
+    return answer;
+    
+}
+void bfs(int start,int n,vector<vector<int>>computers)
+{
+    queue<int> q;
+    q.push(start);
+    visited[start]=1;
+    
+    while(!q.empty())
+    {
+        start=q.front();
+        q.pop();
+        
+        for(int row=0;row<n;++row)
+        {
+            if(computers[start][row]==1&&visited[row]==0)
+            {
+                q.push(row);
+                visited[row]=1;
+            }
+        }
+    }
+    
+}
