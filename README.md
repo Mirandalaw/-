@@ -19,14 +19,16 @@
     
 ## *ex) programmers 가장 큰수 中*
  
- 
- ``` bool cmp(string a,string){
+ ```
+      #include<string>
+      #include<algorithm>
+      using namespace std;
+      
+      bool cmp(string a,string){
         return a+b > b+a;
      }
- ```
- 
- 
- 6, 10 이 있을 때 610, 106 중 더 큰 수 비교
+     
+ //6, 10 이 있을 때 610, 106 중 더 큰 수 비교
  
  ```vector<string> tmp;
  sort(tmp.begin(),tmp.end(),emp);
