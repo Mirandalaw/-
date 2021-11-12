@@ -31,3 +31,24 @@
       vector<string> tmp;
       sort(tmp.begin(),tmp.end(),cmp);
  ```
+
+## *2. string parse*
+
+<hr>
+
+*ex) programmers 방금 그곡 中*
+
+```
+     string str1 = "12:00,12:14,HELLO,CDEFGAB"; //
+     vector<string> str;
+		 int pos = 0;
+		 string delimiter = ",";
+		 while ((pos = str1.find(',')) != string::npos) {
+			 string a;
+			 a = str1.substr(0, pos);
+			 str.push_back(a);
+			 str1.erase(0, pos + delimiter.length());
+		 }
+```
+ 
+  
