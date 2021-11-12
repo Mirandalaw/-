@@ -39,7 +39,7 @@
 *ex) programmers 방금 그곡 中*
 
 ```
-     string str1 = "12:00,12:14,HELLO,CDEFGAB"; //
+     string str1 = "12:00,12:14,HELLO,CDEFGAB"; 
      vector<string> str;
      int pos = 0;
      string delimiter = ",";
