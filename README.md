@@ -52,5 +52,9 @@
 	str1.erase(0, pos + delimiter.length());
      }
 ```
- 
-  
+
+
+<hr>
+
+
+## *ex) programmers 오픈채팅방 中*
