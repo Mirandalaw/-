@@ -36,7 +36,9 @@
 
 <hr>
 
-#*ex) programmers 방금 그곡 中*#
+
+# *ex) programmers 방금 그곡 中*
+
 
 ```
      string str1 = "12:00,12:14,HELLO,CDEFGAB"; 
