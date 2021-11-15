@@ -68,8 +68,8 @@
       
       : "이름 날짜 내용" 과 같은 문자열로 한 줄의 데이터로 들어오면 각각 이름, 날짜, 내용등으로 파싱해서
      사용하기 위해 많이 활용됩니다.
-   
-1) 문자열을 나누는 stringstream
+     
+  - 문자열을 나누는 stringstream
       
       : stringstream에서 공백과 '\n'을 제외하고 문자열에서 맞는 자료형의 정보를 빼냅니다.
       
@@ -78,6 +78,7 @@
       :  ```stream.str(string str)```  은 현재 stream의 값을 문자열 str로 바꿉니다.
       
 <hr>
+
       ```int num;
       	 string str="123 456";
 	 stringstream stream;
@@ -86,4 +87,5 @@
 	 //스트림에서 num의 자료형에 맞는 정보가 없을 때까지 자료를 추출/복사 하는 것임.
 	 stream.str("");//초기화
       ```
+      
 <hr>
