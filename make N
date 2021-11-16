@@ -1,0 +1,32 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+void change_base(int n, int b) {
+	int r;
+	r = n % b;
+	n /= b;
+	if (n > 0)change_base(n, b);
+	
+	if (r < 10)printf("%d", r);//10진수 이하
+	else printf("%c", r - 10 + 'A');//11진수 이상
+}
+
+int main() {
+	int mul, num, base, tbase = -1;
+
+	printf("수와 진법을 입력하세여 : ");
+	scanf_s("%d %d", &num, &base);
+	if (num == 0 || base == 0)return 1;
+
+	if (num < 0) {
+		printf("-");
+		num--;
+		num = ~num;
+	}
+	change_base(num, base);
+
+	printf("(%d)\n", base);
+	return 0;
+}
