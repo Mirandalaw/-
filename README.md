@@ -88,7 +88,8 @@
 <hr>
 
 
-## *2. priority_queue *
+## *3. priority_queue *
+
 
 <hr>
 
@@ -100,7 +101,8 @@
   - priority_queue<자료형> 변수명
     : 선언한 자료형 변수들을 내림차순에 따라 정렬
     
-  - ```struct cmp{
+   ```
+   	struct cmp{
          bool operator()(int n1,int n2) {
 	 	if(abs(n1)>abs(n2)) return true;
 		else if(abs(n1)==abs(n2)){
@@ -108,9 +110,10 @@
 			else return false;
 		return false;
 	     }
-	}; ```
+	};
+   ```
 
-   ```priority_queue<int,vector<int>,cmp>pq ```
+   ```   priority_queue<int,vector<int>,cmp>pq    ```
     : int형 변수들을 cmp 우선순위에 따라 정렬
 
   -```priority_queue<int,vector<int>,greater<int>>pq ```
