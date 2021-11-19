@@ -115,8 +115,8 @@
    ```   priority_queue<int,vector<int>,cmp>pq    ```
     : int형 변수들을 cmp 우선순위에 따라 정렬
 
-  -```priority_queue<int,vector<int>,greater<int>>pq ```
-    : 내림차순으로 
+   ```priority_queue<int,vector<int>,greater<int>>pq ```
+    : 내림차순으로 정렬
 
   - push(element),pop()
   
