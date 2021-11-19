@@ -86,3 +86,37 @@
       ```
       
 <hr>
+
+
+## *2. priority_queue *
+
+<hr>
+
+## *ex) programmers 더 맵게(Heap)中*
+
+  - priority_queue<자료형,container,비교함수> 변수명
+    : 선언한 자료형 변수들을 비교함수에 따라 정렬
+    
+  - priority_queue<자료형> 변수명
+    : 선언한 자료형 변수들을 내림차순에 따라 정렬
+    
+  - ```struct cmp{
+         bool operator()(int n1,int n2) {
+	 	if(abs(n1)>abs(n2)) return true;
+		else if(abs(n1)==abs(n2)){
+			if(n1>n2) return true;
+			else return false;
+		return false;
+	     }
+	}; ```
+
+   ```priority_queue<int,vector<int>,cmp>pq ```
+    : int형 변수들을 cmp 우선순위에 따라 정렬
+
+  -```priority_queue<int,vector<int>,greater<int>>pq ```
+    : 내림차순으로 
+
+  - push(element),pop()
+  
+  - top() : 맨 앞에 있는 원소를 반환
+
