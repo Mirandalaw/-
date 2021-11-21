@@ -1,0 +1,6 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+//ex) 만약 큰 수가 여러개일 경우 index값이 작은 경우 
